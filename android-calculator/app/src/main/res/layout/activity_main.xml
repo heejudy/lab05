@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="28dp"
+    android:background="#F7F7FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사칙연산 계산기"
+        android:textSize="15sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="36dp" />
+
+    <EditText
+        android:id="@+id/editNumber1"
+        style="@style/CalculatorInput"
+        android:hint="첫 번째 숫자" />
+
+    <EditText
+        android:id="@+id/editNumber2"
+        style="@style/CalculatorInput"
+        android:hint="두 번째 숫자"
+        android:layout_marginBottom="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/CalculatorButton"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            style="@style/CalculatorButton"
+            android:text="−" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/CalculatorButton"
+            android:text="×" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/CalculatorButton"
+            android:text="÷" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:gravity="center"
+        android:padding="24dp"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
